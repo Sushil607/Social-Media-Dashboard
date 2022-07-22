@@ -141,26 +141,23 @@ p{
 #twitter{
     border-top: 5px solid var(--primary-twitter-color);
 }
+
 #instagram{
-}
-
-
-/*Border TODO*/
-#instagram {
-    border-top: 5px solid hsl(37, 97%, 70%);
     position: relative;
+    overflow: hidden;
 }
 
-#instagram:first-child:before {
-    content: '';
+#instagram::before{
+    content: "";
     position: absolute;
-    width: 100%;
+    background-image: linear-gradient(to right,hsl(37, 97%, 70%),
+        hsl(329, 70%, 58%))  ;
     height: 5px;
-    background: linear-gradient(to right, hsl(37, 97%, 70%) 50%, hsl(329, 70%, 58%) 50%);
-    top: -5px;
+    width: 100%;
+    top: 0;
     left: 0;
+    transform: skewX(-20deg);
 }
-/*Border TODO*/
 
 
 #youtube{
