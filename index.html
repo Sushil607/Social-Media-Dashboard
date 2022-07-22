@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Social Media Dashboard]</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Dashboard Top -->
+      <div class="dashboard-top">
+        <div class="user-info">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="separator"></div>
+        <div class="theme-switcher">
+          <p>Dark Mode</p>
+          <div id="theme-btn">
+            <div class="theme1" id="theme-circle"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Dashboard Main -->
+      <div class="dashboard-main">
+        <!-- Facebook Tile -->
+        <div id="facebook" class="tile-main">
+          <div class="username">
+            <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            @nathanf
+          </div>
+          <div class="followers-count">1987</div>
+          <div class="followers">FOLLOWERS</div>
+          <div class="change steady">
+            <img src="./images/icon-up.svg" alt="up arrow icon" />12 Today
+          </div>
+        </div>
+        <!-- Twitter Tile -->
+        <div id="twitter" class="tile-main">
+          <div class="username">
+            <img src="./images/icon-twitter.svg" alt="twitter icon" /> @nathanf
+          </div>
+          <div class="followers-count">1044</div>
+          <div class="followers">FOLLOWERS</div>
+          <div class="change gain">
+            <img src="./images/icon-up.svg" alt="up arrow icon" />99 Today
+          </div>
+        </div>
+        <!-- Instagram Tile -->
+        <div id="instagram" class="tile-main">
+          <div class="username">
+            <img src="./images/icon-instagram.svg" alt="instagram icon" />
+            @realnathanf
+          </div>
+          <div class="followers-count">11k</div>
+          <div class="followers">FOLLOWERS</div>
+          <div class="change gain">
+            <img src="./images/icon-up.svg" alt="up arrow icon" />1099 Today
+          </div>
+        </div>
+        <!-- Youtube Tile -->
+        <div id="youtube" class="tile-main">
+          <div class="username">
+            <img src="./images/icon-youtube.svg" alt="youtube icon" />
+            Nathan F.
+          </div>
+          <div class="followers-count">8239</div>
+          <div class="followers">SUBSCRIBERS</div>
+          <div class="change loss">
+            <img src="./images/icon-down.svg" alt="down arrow icon" />144 Today
+          </div>
+        </div>
+      </div>
+      <!-- Dashboard Overview -->
+      <div class="dashboard-overview">
+        <h2>Overview - Today</h2>
+        <div class="overview-tiles-container">
+          <!-- Facebook 1 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Page Views</div>
+              <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">87</div>
+              <div class="percentage-change positive">
+                <img src="./images/icon-up.svg" alt="up icon" /> 3%
+              </div>
+            </div>
+          </div>
+          <!-- Facebook 2 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Likes</div>
+              <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">52</div>
+              <div class="percentage-change negative">
+                <img src="./images/icon-down.svg" alt="down icon" /> 2%
+              </div>
+            </div>
+          </div>
+          <!-- Instagram 1 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Likes</div>
+              <img src="./images/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">5462</div>
+              <div class="percentage-change positive">
+                <img src="./images/icon-up.svg" alt="up icon" /> 2257%
+              </div>
+            </div>
+          </div>
+          <!-- Instagram 2 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Profile Views</div>
+              <img src="./images/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">52k</div>
+              <div class="percentage-change positive">
+                <img src="./images/icon-up.svg" alt="up icon" /> 1375%
+              </div>
+            </div>
+          </div>
+          <!-- Twitter 1 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Retweets</div>
+              <img src="./images/icon-twitter.svg" alt="twitter icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">117</div>
+              <div class="percentage-change positive">
+                <img src="./images/icon-up.svg" alt="up icon" /> 303%
+              </div>
+            </div>
+          </div>
+          <!-- Twitter 2 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Likes</div>
+              <img src="./images/icon-twitter.svg" alt="twitter icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">507</div>
+              <div class="percentage-change positive">
+                <img src="./images/icon-up.svg" alt="up icon" /> 553%
+              </div>
+            </div>
+          </div>
+          <!-- Youtube 1 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Likes</div>
+              <img src="./images/icon-youtube.svg" alt="youtube icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">107</div>
+              <div class="percentage-change negative">
+                <img src="./images/icon-down.svg" alt="down icon" /> 19%
+              </div>
+            </div>
+          </div>
+          <!-- Youtube 2 -->
+          <div class="overview-tile">
+            <div class="tile-top">
+              <div class="field-name">Total Views</div>
+              <img src="./images/icon-youtube.svg" alt="youtube icon" />
+            </div>
+            <div class="tile-bottom">
+              <div class="overview-change">1407</div>
+              <div class="percentage-change negative">
+                <img src="./images/icon-down.svg" alt="down icon" /> 12%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
